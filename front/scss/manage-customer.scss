@@ -1,0 +1,43 @@
+#tbl-customers{
+  tbody tr{
+    cursor: pointer;
+  }
+  tr td,tr th{
+    &:first-child{
+      width: 75px;
+      text-align: center;
+    }
+
+    &:last-child{
+      width: 50px;
+      text-align: center;
+
+      &:hover{
+        color: red;
+      }
+    }
+  }
+}
+
+#tbl-card{
+  padding-bottom: 20px;
+  .card-body {
+    height: 386px;
+  }
+}
+
+.selected-row{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,2989d8+49 */
+  background: rgb(125, 185, 232); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(125, 185, 232, 1) 0%, rgba(41, 137, 216, 1) 49%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(125, 185, 232, 1) 0%, rgba(41, 137, 216, 1) 49%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 1) 0%, rgba(41, 137, 216, 1) 49%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db9e8', endColorstr='#2989d8', GradientType=0); /* IE6-9 */
+  color: white;
+}
+
+.tooltip-inner{
+  max-width: none;
+  background-color: red;
+  color: white;
+}
